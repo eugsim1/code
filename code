@@ -71,3 +71,13 @@ CredentialWalletPassword =
 EOF
 
  sudo /opt/oracle/mgmt_agent/agent_inst/bin/setup.sh opts=[FULL_PATH_TO_INPUT.RSP]
+ 
+ 
+ random-string()
+{
+#    cat /dev/urandom | tr -dc 'a-zA-Z0-9!#' | fold -w  ${1:-32} | head -n 1
+#    cat /dev/urandom | tr -dc 'a A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' | fold -w  ${1:-32} | head -n 1
+     tr -dc 'A-Za-z0-9!#$' </dev/urandom | head -c 14 ; echo
+}
+
+export PASSWORD=`random-string`
