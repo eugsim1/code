@@ -62,8 +62,9 @@ sudo more /opt/oracle/mgmt_agent/agent_inst/log/mgmt_agent.log
 
 ## reinstall
 sudo rpm -e oracle.mgmt_agent
-sudo rpm -Uvh oracle.mgmt_agent.rpm
 sudo rm -rf /opt/oracle/mgmt_agent 
+sudo rpm -Uvh oracle.mgmt_agent.rpm
+
 sudo /opt/oracle/mgmt_agent/agent_inst/bin/setup.sh opts=/home/opc/input.rsp
 
  
