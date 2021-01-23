@@ -81,3 +81,5 @@ EOF
 }
 
 export PASSWORD=`random-string`
+
+--defined-tags '{"tag_namespace_1":{"tag_name_1":"tag_value_1"}}
