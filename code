@@ -83,3 +83,26 @@ EOF
 export PASSWORD=`random-string`
 
 --defined-tags '{"tag_namespace_1":{"tag_name_1":"tag_value_1"}}
+
+########################################################################
+# Refer Agent Installation Guide for more details
+#
+# <Link to documentation>
+#
+# Since this file has sensitive information, please make sure that after
+# executing setup.sh you either delete this file or store it in a secure
+# location
+#
+########################################################################
+ManagementAgentInstallKey = Mi4wLGV1LWZyYW5rZnVydC0xLG9jaWQxLnRlbmFuY3kub2MxLi5hYWFhYWFhYW5wdXhzYWN4MnJuMjJ5Y3djN3VncDNzcXpmdmZodnlycmttZDdlYW5tdnFkNmJnN2lubnEsb2NpZDEubWFuYWdlbWVudGFnZW50aW5zdGFsbGtleS5vYzEuZXUtZnJhbmtmdXJ0LTEuYW1hYWFhYWF1Zm56eDdpYXpjNzRzMzZheHFldzM2anZlajJncjNreWl2NHR4anYzeG0zdWJmY3V6ZGZxLElTZTVJZk9ZOFhzb1JjaV9ZSHo3ZmV1NmRURVZaWlNPSll6bzB2Y2c=
+AgentDisplayName = 
+#Please uncomment the below tags properties and provide values as needed
+#FreeFormTags = [{"<key1>":"<value1>"}, {"<key2>":"<value2>"}]
+#DefinedTags = [{"namespace1":{"<key1>":"<value1>"}}, {"namespace2":{"<key2>":"<value2>"}}]
+ProxyHost = 
+ProxyPort = 
+ProxyUser = 
+ProxyPassword = 
+ProxyRealm = 
+CredentialWalletPassword = 
+#Service.plugin.logan.download=true
