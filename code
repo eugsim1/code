@@ -54,7 +54,18 @@ update-alternatives --list java
 update-alternatives --list javac
 java -version
 wget https://objectstorage.us-ashburn-1.oraclecloud.com/n/idtskf8cjzhp/b/installer/o/Linux-x86_64/latest/oracle.mgmt_agent.rpm
-rpm -Uvh oracle.mgmt_agent.rpm
+### install
+sudo rpm -Uvh oracle.mgmt_agent.rpm
+chmod +x /home/opc
+sudo /opt/oracle/mgmt_agent/agent_inst/bin/setup.sh opts=/home/opc/input.rsp
+sudo more /opt/oracle/mgmt_agent/agent_inst/log/mgmt_agent.log
+
+## reinstall
+sudo rpm -e oracle.mgmt_agent
+sudo rm -rf /opt/oracle/mgmt_agent 
+sudo /opt/oracle/mgmt_agent/agent_inst/bin/setup.sh opts=/home/opc/input.rsp
+
+ 
 
 cat<<EOF>agent_rsp.tx
 AgentDisplayName = 
