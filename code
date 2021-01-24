@@ -84,6 +84,14 @@ CredentialWalletPassword =
 #Service.plugin.logan.download=true
 EOF
 
+managementAgentInstallKey = 
+FreeFormTags = [{"Responsible":"Eugene Simos"}, {"Project":"log_analytics"}]
+DefinedTags = [{"Oracle-Tags":{"ResourceAllocation":"Logging-Analytics"}}]
+CredentialWalletPassword = 
+Service.plugin.logan.download=true
+ 
+
+
  sudo /opt/oracle/mgmt_agent/agent_inst/bin/setup.sh opts=[FULL_PATH_TO_INPUT.RSP]
  
  
