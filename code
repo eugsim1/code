@@ -128,3 +128,10 @@ ProxyPassword =
 ProxyRealm = 
 CredentialWalletPassword = 
 #Service.plugin.logan.download=true
+
+
+
+Discard the local changes
+
+using git reset --hard
+or git checkout -t -f remote/branch
