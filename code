@@ -135,3 +135,12 @@ Discard the local changes
 
 using git reset --hard
 or git checkout -t -f remote/branch
+
+
+tail file | grep A1 | awk '{print $NF}'
+
+
+input="log-group_ocids.txt"
+while IFS= read -r line
+do
+done< "$input"
