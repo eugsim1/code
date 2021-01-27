@@ -144,3 +144,7 @@ input="log-group_ocids.txt"
 while IFS= read -r line
 do
 done< "$input"
+
+
+https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/
+git push --delete origin tagname
