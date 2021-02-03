@@ -148,3 +148,9 @@ done< "$input"
 
 https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/
 git push --delete origin tagname
+
+#### install ansible
+sudo yum install -y  https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+sudo yum -y update
+##sudo subscription-manager repos --enable "rhel-*-optional-rpms" --enable "rhel-*-extras-rpms"  --enable "rhel-ha-for-rhel-*-server-rpms"
+
