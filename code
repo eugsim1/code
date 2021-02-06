@@ -42,6 +42,10 @@ done
 
 ### jdk install
 cd /tmp
+JAVA_VER=$(java -version 2>&1 >/dev/null | egrep "\S+\s+version" | awk '{print $3}' | tr -d '"')
+echo $JAVA_VER
+  if [ -z $JAVA_VER ]
+  then
 wget -c --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn-pub/java/jdk/8u281-b09/89d678f2be164786b292527658ca1605/jdk-8u281-linux-x64.tar.gz
 sudo mkdir /usr/lib/jvm
 cd /usr/lib/jvm
@@ -53,6 +57,10 @@ sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_281/bin/javac
 update-alternatives --list java
 update-alternatives --list javac
 java -version
+else
+ echo "found java version $JAVA_VER"
+fi
+
 wget https://objectstorage.us-ashburn-1.oraclecloud.com/n/idtskf8cjzhp/b/installer/o/Linux-x86_64/latest/oracle.mgmt_agent.rpm
 ### install
 sudo rpm -Uvh oracle.mgmt_agent.rpm
