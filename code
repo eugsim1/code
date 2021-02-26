@@ -174,4 +174,20 @@ select sys_context('userenv', 'server_host') from dual; ### db name
  show parameter DIAGNOSTIC_DEST
  -- /u01/app/oracle
 
+COLUMN name FORMAT A25
+COLUMN value FORMAT A80
+set linesize 120
+
+SELECT name, value FROM v$diag_info;
+Diag Enabled              TRUE
+ADR Base                  /u01/app/oracle
+ADR Home                  /u01/app/oracle/diag/rdbms/mydbcs_fra1s4/mydbcs
+Diag Trace                /u01/app/oracle/diag/rdbms/mydbcs_fra1s4/mydbcs/trace
+Diag Alert                /u01/app/oracle/diag/rdbms/mydbcs_fra1s4/mydbcs/alert
+Diag Incident             /u01/app/oracle/diag/rdbms/mydbcs_fra1s4/mydbcs/incident
+Diag Cdump                /u01/app/oracle/diag/rdbms/mydbcs_fra1s4/mydbcs/cdump
+Health Monitor            /u01/app/oracle/diag/rdbms/mydbcs_fra1s4/mydbcs/hm
+Default Trace File        /u01/app/oracle/diag/rdbms/mydbcs_fra1s4/mydbcs/trace/mydbcs_ora_82259.trc
+Active Problem Count      1
+Active Incident Count     11
 
