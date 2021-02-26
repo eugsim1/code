@@ -165,3 +165,6 @@ sudo yum -y update
 
 
 find . -name '*.txt' -print | xargs grep <pattern>
+
+select sys_context('userenv','instance_name') from dual; ### SID
+select sys_context('userenv', 'server_host') from dual; ### db name
