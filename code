@@ -191,3 +191,6 @@ Default Trace File        /u01/app/oracle/diag/rdbms/mydbcs_fra1s4/mydbcs/trace/
 Active Problem Count      1
 Active Incident Count     11
 
+sudo lsof -i -n | egrep '\<ssh\>'
+
+sudo lsof -i -n | egrep '\<sshd\>'
