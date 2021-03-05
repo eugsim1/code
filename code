@@ -137,7 +137,7 @@ ProxyRealm =
 CredentialWalletPassword = 
 #Service.plugin.logan.download=true
 
-
+usermod -a -G  oinstall mgmt_agent
 
 Discard the local changes
 
