@@ -193,4 +193,12 @@ Active Incident Count     11
 
 sudo lsof -i -n | egrep '\<ssh\>'
 
+
+
+oci log-analytics source list-sources \
+--profile DBSEC \
+--compartment-id $ANALYTICS_COMPARTMENT \
+--namespace-name "$ANALYTICS_NAMESPACE"  \
+--all | jq  '.data.items[] | "\(."association-count"):\(."display-name"):\(.name):\(."entity-types"[]."entity-type")" '
+
 sudo lsof -i -n | egrep '\<sshd\>'
