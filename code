@@ -205,3 +205,5 @@ sudo lsof -i -n | egrep '\<sshd\>'
 
 
 https://ispycode.com/GO/String-Conversions/Add-double-quotes-to-a-string
+
+gofmt -s -w .
