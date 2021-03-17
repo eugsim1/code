@@ -202,3 +202,6 @@ oci log-analytics source list-sources \
 --all | jq  '.data.items[] | "\(."association-count"):\(."display-name"):\(.name):\(."entity-types"[]."entity-type")" '
 
 sudo lsof -i -n | egrep '\<sshd\>'
+
+
+https://ispycode.com/GO/String-Conversions/Add-double-quotes-to-a-string
